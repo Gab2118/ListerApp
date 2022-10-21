@@ -33,7 +33,7 @@ const completedTasks = computed(() => {
 });
 
 // on utilise la valeur sauvegardée comme valeur initiale, si elle est nulle on utilise un tableau vide
-const list = ref(storage.load("tasks")) || [];
+const list = ref(storage.load("tasks") || []);
 
 function deleteItem(index) {
   //effacer un élément d'un tableau (splice)

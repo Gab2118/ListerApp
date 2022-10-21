@@ -81,6 +81,7 @@ function addItem(item) {
 
       &:nth-child(even) {
         background-color: var(--bg-color);
+
       }
 
       &:hover {
